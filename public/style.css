@@ -1,13 +1,85 @@
 body{
     margin: 0;
     background-color: whitesmoke;
-    font-family: 'Shadows Into Light', cursive;
+    font-family: 'Staatliches', cursive;
 }
 
 .App-header{
     margin: 0px;
     color:rgb(255, 255, 255);
-    font-size: 5rem;
+    font-size: 6vw;
     text-align: center;
-    background-color: rgb(204, 204, 12);
+    background-color: rgb(224, 224, 31);
+}
+
+.App-footer{
+    bottom: 0px;
+    color:rgb(255, 255, 255);
+    font-size: 2vw;
+    text-align: center;
+    position: absolute;
+    width: 100%;
+    background-color: rgb(224, 224, 31);
+}
+
+.todo-container{
+    margin: 5vh 37vw auto;
+    height: 70vh;
+    width: 25vw;
+    border: 1px solid rgb(240, 240, 240);
+    border-width: 5px;
+    border-radius: 10px;
+    background-color: rgb(255, 255, 255);
+}
+
+.todo-header{
+    text-align: center;
+    margin: 10px;
+    color:rgb(167, 167, 167);
+}
+
+.field-container{
+    /* display: inline-block; */
+    margin: 0vw 2vw  auto;
+
+}
+
+input[type=text] {
+    width: 65%;
+    padding: 5px 0px;
+    margin: 15px 10px;
+    box-sizing: border-box;
+    border: none;
+    outline: 0;
+    border-bottom: 2px solid rgb(167, 167, 167);
+}
+
+button {
+    padding: 0px 8px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 28px;
+    cursor: pointer;
+    color: white;
+    border: 0px solid #e7e7e7;
+    border-radius: 50%;
+    background-color: rgb(167, 167, 167);
+}
+
+button:hover {
+    background-color: rgb(224, 224, 31);
+}
+
+.items-container {
+    overflow-y: scroll;
+    height: 200px;
+    margin: 20px;
+}
+
+.items-container::-webkit-scrollbar {
+    display: none;
+}
+
+li {
+    color: rgb(167, 167, 167);
 }
