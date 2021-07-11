@@ -1,0 +1,13 @@
+body{
+    margin: 0;
+    background-color: whitesmoke;
+    font-family: 'Shadows Into Light', cursive;
+}
+
+.App-header{
+    margin: 0px;
+    color:rgb(255, 255, 255);
+    font-size: 5rem;
+    text-align: center;
+    background-color: rgb(204, 204, 12);
+}
