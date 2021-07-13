@@ -5,6 +5,7 @@
 
 // import react module
 import React, { useState } from 'react';
+import TodoItem from './TodoItem';
 
 /**
  * @function Todo
@@ -38,6 +39,17 @@ function Todo() {
         setInputText("");
     }
 
+    /**
+     * @description on click items will be deleted form item array
+     */
+    function deleteItem(id) {
+        setItems((prevItems) => {
+            return prevItems.filter((item, index) => {
+                return index !== id;
+            })
+        })
+    }
+
     return (
         <div className="todo-container">
             <header className="todo-header">Todo List</header>
@@ -55,7 +67,7 @@ function Todo() {
                 <ul>
                     {
                         items.map((item, index) => {
-                            return <li key={index}>{item}</li>
+                            return <TodoItem key={index} id={index} text={item} onChecked={deleteItem} />
                         })
                     }
                 </ul>
