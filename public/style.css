@@ -2,6 +2,8 @@ body{
     margin: 0;
     background-color: whitesmoke;
     font-family: 'Staatliches', cursive;
+    background-image: url("https://www.transparenttextures.com/patterns/brushed-alum.png");
+    /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
 }
 
 .App-header{
@@ -25,16 +27,17 @@ body{
 .todo-container{
     margin: 5vh 37vw auto;
     height: 70vh;
-    width: 25vw;
-    border: 1px solid rgb(240, 240, 240);
-    border-width: 5px;
+    width: 22vw;
+    border: 0px solid rgb(240, 240, 240);
     border-radius: 10px;
     background-color: rgb(255, 255, 255);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .todo-header{
     text-align: center;
     margin: 10px;
+    padding: 15px;
     color:rgb(224, 224, 31);
 }
 
